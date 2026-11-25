@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BELAYA – Kit sourcils · Rodez &amp; livraison France</title>
+<meta name="description" content="Kit sourcils BELAYA par Gul Beauty Concept : trouve ta teinte, paie en ligne, récupère ton kit à Rodez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f6efe6;--bg2:#ede3d6;--card:#fcf8f2;--line:#e0d0bc;--ink:#3a2a1f;--soft:#6c5848;--gold:#b08a57;--gold2:#7a5a36;--rose:#8e6247}
+*{box-sizing:border-box;min-width:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Poppins,system-ui,sans-serif;font-weight:300;overflow-x:clip}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05;text-wrap:balance;margin:0}
+h2{font-size:clamp(32px,4.4vw,46px);margin-bottom:8px}
+.band{padding:clamp(28px,4vw,64px) max(5vw,16px)}
+.wrap{max-width:1080px;margin:0 auto}
+.lead{color:var(--soft);margin:0 0 24px;max-width:620px}
+.hero{background:radial-gradient(ellipse 70% 70% at 30% 30%,#fffaf3 0%,var(--bg) 70%);text-align:center;padding-bottom:40px}
+.lw{position:relative;width:120px;height:120px;margin:0 auto 18px;animation:fl 5s ease-in-out infinite}
+.lw::before{content:"";position:absolute;inset:-8px;border-radius:50%;background:conic-gradient(from 0deg,rgba(176,138,87,0) 0 55%,rgba(176,138,87,.95) 72%,rgba(176,138,87,0) 88%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));animation:sp 3.5s linear infinite}
+.lw img{width:100%;height:100%;border-radius:50%;border:2px solid var(--gold);display:block}
+@keyframes fl{50%{transform:translateY(-6px)}}@keyframes sp{to{transform:rotate(360deg)}}
+.logo{font-family:"Cormorant Garamond",serif;font-size:clamp(56px,11vw,104px);letter-spacing:.18em;margin:0;padding-left:.18em;font-weight:600;background:linear-gradient(90deg,#7a5a36,#b8915c,#7a5a36);-webkit-background-clip:text;background-clip:text;color:transparent}
+.by{color:var(--soft);font-size:14px;margin-top:-4px}
+.hero h1{font-size:clamp(34px,5.4vw,52px);margin-top:18px}
+.hero h1 em{color:var(--rose);font-style:italic;font-weight:500}
+.hero p{color:var(--soft);max-width:540px;margin:12px auto 22px}
+.hero .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
+.how div{background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:22px}
+.how b{font-family:"Cormorant Garamond",serif;font-size:44px;color:var(--gold);line-height:1;display:block}
+.how h3{font-size:26px;margin:6px 0}
+.how p{margin:0;color:var(--soft);font-size:15px}
+.studio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+.q{margin-bottom:22px}
+.q .lbl{display:block;font-weight:500;margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 16px 0 8px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--soft);font:15px Poppins,sans-serif;cursor:pointer}
+.opt i{width:30px;height:30px;border-radius:50%;border:2px solid rgba(58,42,31,.15);flex:none}
+.opt[aria-pressed=true]{border-color:var(--gold);color:var(--ink);background:#efe3d2}
+.opt:focus-visible,.btn:focus-visible,.sw:focus-visible,input:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.face{background:var(--card);border:1.5px solid var(--line);border-radius:28px;padding:18px;text-align:center;position:sticky;top:16px}
+.face svg{width:100%;max-width:340px;height:auto;display:block;margin:0 auto}
+.face.lux{padding:16px 16px 22px}
+.arch{margin:0;position:relative;border-radius:220px 220px 20px 20px;overflow:hidden;border:1.5px solid var(--gold);aspect-ratio:4/5;background:#e9dfd2}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block;opacity:0;transition:opacity .6s ease}
+.arch img.on{opacity:1}
+.arch img{transform:scale(1.6);transform-origin:41% 20%}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,239,230,0) 62%,rgba(58,42,31,.35))}
+.arch figcaption{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:1;display:flex;align-items:center;gap:9px;background:rgba(252,248,242,.92);backdrop-filter:blur(6px);border:1px solid var(--gold);border-radius:999px;padding:7px 16px 7px 8px;font-weight:500;color:var(--ink);white-space:nowrap;box-shadow:0 8px 20px rgba(58,42,31,.18)}
+.dot{width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--gold);transition:background .5s}
+.face .stroke{width:190px;max-width:70%;height:auto;display:block;margin:6px auto 0}
+#resStroke{transition:stroke .5s}
+.howto{background:var(--card);border:1.5px solid var(--gold);border-radius:20px;padding:16px 18px;margin:0 0 22px}
+.howto > b{display:block;color:var(--gold2);margin-bottom:4px}
+.howto p{margin:0;color:var(--soft);font-size:15px}
+.tap{margin:12px 0 0;font-size:13px;font-weight:500;color:var(--gold2);animation:tap 2.4s ease-in-out infinite}
+@keyframes tap{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.tap{animation:none}}
+.rdots{display:flex;justify-content:center;gap:14px;margin:12px 0 4px}
+.rd{background:none;border:0;padding:0;cursor:pointer;display:grid;justify-items:center;gap:4px;font:500 12px Poppins,sans-serif;color:var(--soft)}
+.rd i{width:24px;height:24px;border-radius:50%;display:block;outline:1.5px solid transparent;outline-offset:3px;transition:outline-color .3s}
+.rd[aria-pressed=true]{color:var(--ink)}
+.rd[aria-pressed=true] i{outline-color:var(--gold)}
+.result{margin-top:8px}
+.result small{color:var(--soft);display:block}
+.result b{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:600;color:var(--gold2);line-height:1.1}
+.result p{color:var(--soft);font-size:15px;margin:6px 0 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;background:linear-gradient(180deg,#9a7548,#7a5a36);color:#fff;box-shadow:0 8px 22px rgba(122,90,54,.25);font:600 16px Poppins,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--gold2);border:1.5px solid var(--gold)}
+.btn.sm{min-height:44px;padding:0 16px;font-size:14px}
+.btn.big{min-height:58px;font-size:17px;width:100%}
+.shades{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px}
+.sw{background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:18px;text-align:left;color:var(--ink);font:inherit;cursor:pointer;display:grid;gap:10px}
+.sw[aria-pressed=true]{border-color:var(--gold);background:linear-gradient(180deg,#efe3d2,var(--card))}
+.chip{height:70px;border-radius:14px;position:relative;overflow:hidden}
+.chip::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.10) 0 2px,transparent 2px 7px)}
+.sw h3{font-size:30px}
+.sw p{margin:0;color:var(--soft);font-size:14px}
+.sw .who{display:block;margin-top:6px;font:500 14px Poppins,sans-serif;color:var(--soft)}
+.who2{font-size:12px;color:var(--soft)}
+.opt[aria-pressed=true] .who2{color:var(--ink)}
+.lab{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(20px,4vw,40px);align-items:start}
+.canvasBox{background:#efe6da;border:1.5px dashed var(--line);border-radius:24px;min-height:360px;display:grid;place-items:center;overflow:hidden;position:relative}
+.canvasBox canvas{display:block;max-width:100%;height:auto;touch-action:none;cursor:crosshair}
+.drop{text-align:center;padding:30px;color:var(--soft)}
+.drop svg{width:70px;height:70px;margin-bottom:8px}
+.tools{display:grid;gap:18px}
+.tools .row{display:flex;flex-wrap:wrap;gap:10px}
+.slider{display:grid;gap:6px}
+.slider span{display:flex;justify-content:space-between;font-size:15px}
+input[type=range]{width:100%;accent-color:var(--gold);height:32px}
+.steps{margin:0;padding-left:20px;color:var(--soft);font-size:15px;display:grid;gap:4px}
+.privacy{font-size:13px;color:var(--soft);border-left:3px solid var(--gold);padding-left:12px;margin:0}
+.kit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center}
+.kit svg{width:100%;max-width:420px;height:auto;justify-self:center}
+.kit ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+.kit li{display:flex;gap:12px;align-items:baseline}
+.kit li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;transform:translateY(-2px)}
+.price{font-family:"Cormorant Garamond",serif;font-size:56px;font-weight:600;color:var(--gold2);line-height:1}
+.price small{font-family:Poppins,sans-serif;font-size:14px;color:var(--soft);font-weight:300;margin-left:8px}
+.orderbox{background:var(--card);border:1.5px solid var(--gold);border-radius:24px;padding:22px;display:grid;gap:16px;margin-top:20px}
+.orderbox .lbl{font-weight:500}
+.cc{display:grid;gap:8px;font-size:15px;color:var(--soft);border-top:1px solid var(--line);padding-top:14px}
+.cc div{display:flex;gap:10px;align-items:flex-start}
+.cc b{color:var(--ink);font-weight:500}
+.secure{font-size:13px;color:var(--soft);text-align:center;margin:0}
+.note{font-size:13px;color:var(--soft);text-align:center;margin-top:24px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:500;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::after{content:"+";font-size:26px;color:var(--gold);line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--soft);margin:10px 0 0}
+footer{text-align:center;color:var(--soft);font-size:14px;border-top:1px solid var(--line)}
+footer span{white-space:nowrap}
+.heroGrid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+.heroPic{margin:0;position:relative;border-radius:30px;overflow:hidden;border:1.5px solid var(--gold);box-shadow:0 30px 70px rgba(90,64,38,.22);animation:fl 7s ease-in-out infinite}
+.heroPic img,.kitPic img{display:block;width:100%;height:auto}
+
+.kitPic{margin:0;border-radius:26px;overflow:hidden;border:1.5px solid var(--gold);width:100%;max-width:440px;justify-self:center;box-shadow:0 24px 60px rgba(90,64,38,.2)}
+@media(max-width:760px){.heroGrid{grid-template-columns:1fr}.heroPic{max-width:420px;margin:0 auto}}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.badges span{border:1px solid var(--gold);color:var(--gold2);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:500;letter-spacing:.03em}
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px}
+.unit{background:var(--card);border:1.5px solid var(--line);border-radius:24px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.unit img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.unit div{padding:18px;display:grid;gap:8px;align-content:start}
+.unit h3{font-size:28px}
+.unit p{margin:0;color:var(--soft);font-size:15px}
+.unit .pr{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:600;color:var(--gold2);line-height:1}
+.unit .btn{margin-top:6px}
+.maker{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,48px);align-items:center}
+.maker img{width:100%;height:auto;max-width:360px;border-radius:26px;border:1.5px solid var(--gold);display:block;justify-self:center}
+.maker blockquote{margin:16px 0 0;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:26px;color:var(--gold2)}
+@media(max-width:760px){.maker{grid-template-columns:1fr}}
+.xmas{background:linear-gradient(90deg,#7a5a36,#9a7548,#7a5a36);color:#fff;text-align:center;padding:10px 16px;font-size:14px;letter-spacing:.02em}
+.xmas a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px;margin-left:6px;white-space:nowrap}
+.routine{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;counter-reset:st}
+.routine div{background:var(--card);border:1.5px solid var(--line);border-radius:24px;padding:22px 20px;position:relative}
+.routine div::before{counter-increment:st;content:counter(st);font-family:"Cormorant Garamond",serif;font-size:56px;line-height:1;color:var(--gold);display:block;margin-bottom:6px}
+.routine h3{font-size:26px;margin:0 0 4px}
+.routine .tool{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.routine p{margin:0;color:var(--soft);font-size:15px}
+.routine-tip{margin:18px 0 0;text-align:center;color:var(--soft);font-style:italic}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:50;display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,#9a7548,#7a5a36);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 12px 30px rgba(90,64,38,.35);border:1.5px solid rgba(255,255,255,.35)}
+.wa-float svg{width:22px;height:22px;flex:none}
+@media(max-width:520px){.wa-float span{display:none}.wa-float{padding:14px}}
+.fans{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin:26px 0 8px}
+.fan{display:grid;justify-items:center;gap:8px;font-weight:500}
+.fan i{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--gold2);background:var(--card);border:1.5px solid var(--gold);box-shadow:0 8px 20px rgba(90,64,38,.12)}
+.fans-quote{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(24px,3.4vw,32px);color:var(--gold2);margin:22px auto 0;max-width:760px;line-height:1.3}
+.bfbar{background:#1f1612;color:#f3e6d3;text-align:center;padding:11px 16px;font-size:14px;letter-spacing:.03em}
+.bfbar b{color:#e2c08d;letter-spacing:.12em}
+.bfbar code{font:600 13px Poppins,sans-serif;background:rgba(226,192,141,.15);border:1px dashed #e2c08d;border-radius:6px;padding:1px 7px;color:#e2c08d}
+.bfTag{display:inline-block;vertical-align:middle;margin-left:10px;background:#1f1612;color:#e2c08d;font:600 13px Poppins,sans-serif;letter-spacing:.06em;border-radius:999px;padding:4px 10px}
+.bfTag[hidden]{display:none}
+s.old{text-decoration:none}
+body.bf s.old{text-decoration:line-through;opacity:.55;font-size:.8em}
+body.bf .price{text-decoration:line-through;text-decoration-thickness:1px}
+body.bf .price .bfTag,body.bf .price small{text-decoration:none;display:inline-block}
+@media(max-width:760px){.studio,.lab,.kit{grid-template-columns:1fr}.face{position:static}}
+@media (prefers-reduced-motion:reduce){.lw,.lw::before,.heroPic{animation:none}}
+</style>
+</head>
+<body>
+<div class="bfbar" id="bfBar" hidden><b>BLACK FRIDAY</b> · -15 % sur le kit sourcils BELAYA : 33,90 € au lieu de 39,90 €, jusqu'au lundi 30 novembre · <a href="#commande" style="color:#e2c08d;font-weight:600">J'en profite</a></div>
+<div class="xmas">🎁 Idée cadeau de Noël : le kit BELAYA arrive dans sa boîte élégante, prêt à offrir.<a href="#commande">Je commande</a></div>
+
+<header class="band hero">
+ <div class="heroGrid">
+ <div class="heroTxt">
+  <div class="lw"><img src="logo.jpg" alt="Gul Beauty Concept"></div>
+  <p class="logo">BELAYA</p>
+  <div class="by">par Gul Beauty Concept</div>
+  <h1>Sourcils parfaits, <em>confiance assumée.</em></h1>
+  <p>Le kit sourcils waterproof : crayon précision, pommade, gel fixateur et goupillon. Trouve ta teinte, commande en ligne, et récupère ton kit à Rodez ou fais-toi livrer partout en France.</p>
+  <div class="cta"><a class="btn" href="#commande">Commander · 39,90 €</a><a class="btn ghost" href="#quiz">Trouver ma teinte</a></div>
+ </div>
+ <figure class="heroPic"><img src="belaya-hero.webp" alt="Le kit sourcils waterproof BELAYA à 39,90 €" width="900" height="1344"></figure>
+ </div>
+</header>
+
+<section class="band" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>Commander en 3 étapes</h2>
+    <p class="lead">Retrait gratuit au cabinet à Rodez, ou livraison en point relais partout en France pour 3,90 €.</p>
+    <div class="how">
+      <div><b>1</b><h3>Choisis ta teinte</h3><p>4 teintes, du plus clair au plus foncé : Blondie, Toffee, Mocha, Brunette. Le quiz t'aide à trouver la bonne.</p></div>
+      <div><b>2</b><h3>Commande en ligne</h3><p>En quelques clics depuis ton téléphone. Je te confirme ta commande.</p></div>
+      <div><b>3</b><h3>Récupère ton kit</h3><p>Au cabinet à Rodez sur rendez-vous, ou dans le point relais près de chez toi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="quiz">
+  <div class="wrap studio">
+    <div>
+      <h2>Trouve ta teinte</h2>
+      <p class="lead">Réponds à 3 questions : je te conseille la teinte BELAYA faite pour toi.</p>
+      <div class="howto">
+        <b>👀 Vois chaque teinte en vrai, sur mes sourcils</b>
+        <p>Sur la photo, c'est moi, Gul. Touche une teinte sous la photo : mes sourcils changent de couleur pour te montrer le rendu de <b>Blondie</b>, <b>Toffee</b>, <b>Mocha</b> ou <b>Brunette</b>. Compare-les, et choisis celle qui te ressemble le plus.</p>
+      </div>
+      <div class="q"><span class="lbl">1. Ta couleur de cheveux</span><div class="opts" id="hairOpts"></div></div>
+      <div class="q"><span class="lbl">2. Ta carnation</span><div class="opts" id="skinOpts"></div></div>
+      <div class="q"><span class="lbl">3. Le rendu que tu préfères</span><div class="opts" id="lookOpts"></div></div>
+    </div>
+    <div class="face lux">
+      <figure class="arch">
+        <img class="pv" data-shade="blond" src="belaya-portrait-blond.webp" alt="" width="780" height="1045">
+        <img class="pv" data-shade="chatain" src="belaya-portrait-chatain.webp" alt="" width="780" height="1045">
+        <img class="pv on" data-shade="brun" src="belaya-portrait-brun.webp" alt="Gul, créatrice de BELAYA : aperçu de la teinte sur ses sourcils" width="780" height="1045">
+        <img class="pv" data-shade="noir" src="belaya-portrait-noir.webp" alt="" width="780" height="1045">
+        <figcaption><span class="dot" id="resDot"></span><span id="resTag">—</span></figcaption>
+      </figure>
+      <div class="result">
+        <small>Ta teinte BELAYA idéale</small>
+        <svg class="stroke" viewBox="0 0 240 44" aria-hidden="true"><path id="resStroke" d="M14 28 C 50 10, 100 8, 140 16 S 210 32, 226 18" fill="none" stroke-width="16" stroke-linecap="round"/><path id="resStroke2" d="M22 30 C 60 16, 110 14, 150 21 S 205 30, 218 22" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3" stroke-linecap="round"/></svg>
+        <b id="resName">—</b>
+        <p class="tap">👆 Touche une teinte pour la voir sur mes sourcils</p>
+        <div class="rdots" id="resDots"></div>
+        <p id="resWhy"></p>
+        <a class="btn sm" href="#commande">Commander cette teinte</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>Le nuancier</h2>
+    <p class="lead">Touche une teinte pour la voir sur le portrait et sur ta photo.</p>
+    <div class="shades" id="shades"></div>
+  </div>
+</section>
+
+<section class="band" id="essai">
+  <div class="wrap">
+    <h2>Essaie sur ta photo</h2>
+    <p class="lead">Une simulation pour visualiser la teinte : passe le pinceau sur tes sourcils, comme avec la pommade.</p>
+    <div class="lab">
+      <div class="canvasBox" id="box">
+        <div class="drop" id="drop">
+          <svg viewBox="0 0 70 70" aria-hidden="true"><rect x="6" y="14" width="58" height="44" rx="10" fill="none" stroke="#ddb683" stroke-width="3"/><circle cx="35" cy="36" r="12" fill="none" stroke="#e9bcc0" stroke-width="3"/><rect x="24" y="8" width="22" height="8" rx="3" fill="#ddb683"/></svg>
+          <p>Ajoute un selfie de face, bien éclairé, sans lunettes.</p>
+          <label class="btn" for="file">Choisir ma photo</label>
+        </div>
+        <canvas id="cv" hidden></canvas>
+      </div>
+      <div class="tools">
+        <input id="file" type="file" accept="image/*" hidden>
+        <ol class="steps">
+          <li>Ajoute ta photo</li>
+          <li>Choisis ta teinte</li>
+          <li>Colorie tes sourcils avec le doigt ou la souris</li>
+          <li>Appuie sur « Avant » pour comparer</li>
+        </ol>
+        <div><span style="font-weight:500">Teinte</span><div class="opts" id="labShades" style="margin-top:10px"></div></div>
+        <div class="row">
+          <button type="button" class="opt" id="modeBrush" aria-pressed="true" style="padding:0 16px">Pinceau</button>
+          <button type="button" class="opt" id="modeErase" aria-pressed="false" style="padding:0 16px">Gomme</button>
+        </div>
+        <label class="slider"><span>Taille du pinceau <b id="sizeV"></b></span><input id="size" type="range" min="4" max="60" value="18"></label>
+        <label class="slider"><span>Intensité <b id="intV"></b></span><input id="int" type="range" min="10" max="100" value="60"></label>
+        <div class="row">
+          <button type="button" class="btn ghost sm" id="undo">Annuler</button>
+          <button type="button" class="btn ghost sm" id="clear">Tout effacer</button>
+          <button type="button" class="btn ghost sm" id="before">Avant</button>
+          <label class="btn ghost sm" for="file">Changer de photo</label>
+        </div>
+        <p class="privacy">Ta photo reste sur ton téléphone : elle n'est envoyée nulle part. Le rendu est une simulation, la couleur réelle peut varier selon la lumière et ta pilosité.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="commande" style="background:var(--bg2)">
+  <div class="wrap kit">
+    <figure class="kitPic"><img src="belaya-kit-ouvert.webp" alt="Le kit BELAYA ouvert : gel fixateur, pommade et crayon précision" width="900" height="1344"></figure>
+    <div>
+      <h2>Le kit sourcils waterproof</h2>
+      <div class="badges"><span>Waterproof</span><span>Longue tenue</span><span>Résultat naturel</span><span>Tous types de sourcils</span></div>
+      <ul>
+        <li>Crayon précision, pour dessiner poil par poil</li>
+        <li>Pommade 2 en 1 : remplit et fixe, texture crémeuse</li>
+        <li>Gel fixateur, sourcils disciplinés toute la journée</li>
+        <li>Goupillon, pour brosser et estomper</li>
+      </ul>
+      <div class="price">39,90 €<span class="bfTag" hidden>33,90 € · Black Friday</span><small>le kit complet</small></div>
+      <div class="orderbox">
+        <span class="lbl">Ta teinte</span>
+        <div class="opts" id="orderShades"></div>
+        <span class="lbl">Réception</span>
+        <div class="opts" id="orderMode"></div>
+        <a class="btn big" id="pay" href="#" target="_blank" rel="noopener">Payer 39,90 € par carte</a>
+        <p class="secure" id="payNote"></p>
+        <p class="secure" style="margin:0">En commandant, tu acceptes les <a href="cgv.html" style="color:var(--gold2)">conditions générales de vente</a>.</p>
+        <div class="cc" id="ccInfo"></div>
+      </div>
+      <p class="secure" style="margin-top:14px">Une question ? <span style="white-space:nowrap">06 46 67 52 42</span> · Instagram <span style="white-space:nowrap">@belaya.cosmetics</span></p>
+    </div>
+  </div>
+  <p class="note">Un doute sur ta teinte ? Envoie-moi une photo de tes sourcils sur WhatsApp, je te conseille personnellement.</p>
+</section>
+
+<section class="band" id="avis" style="background:var(--bg2)">
+  <div class="wrap" style="text-align:center">
+    <h2>Elles ont adopté BELAYA 🤎</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Mes premières clientes ont testé le kit… et l'ont adoré. Leur verdict : <b style="color:var(--gold2)">« précis » et « top »</b>.</p>
+    <div class="fans"><div class="fan"><i>G</i>Gulsum</div><div class="fan"><i>S</i>Stéphanie</div><div class="fan"><i>C</i>Christelle</div><div class="fan"><i>A</i>Amélie</div><div class="fan"><i>B</i>Bircan</div><div class="fan"><i>L</i>Laure</div></div>
+    <p class="fans-quote">« Ce n'est pas parce que c'est ma marque, mais c'est de loin le meilleur crayon à sourcils que j'ai testé. Et toutes celles qui l'ont essayé sont du même avis. »<br><span style="font-family:Poppins,sans-serif;font-style:normal;font-size:15px;color:var(--soft)">— Gul, créatrice de BELAYA</span></p>
+  </div>
+</section>
+
+<section class="band" id="routine">
+  <div class="wrap">
+    <h2>Ma routine en 4 étapes</h2>
+    <p class="lead">Des sourcils parfaits en quelques minutes, avec les 4 indispensables du kit.</p>
+    <div class="routine">
+      <div><span class="tool">Goupillon</span><h3>Brosse</h3><p>Brosse les poils vers le haut et vers l'extérieur pour voir la forme naturelle de tes sourcils et repérer les zones à combler.</p></div>
+      <div><span class="tool">Crayon précision</span><h3>Dessine</h3><p>Avec la pointe fine, trace de petits traits légers, poil par poil, là où tes sourcils sont clairsemés. Le secret : des gestes courts, dans le sens du poil.</p></div>
+      <div><span class="tool">Pommade 2 en 1</span><h3>Remplis</h3><p>Dépose un voile de pommade pour harmoniser la couleur et donner de la densité, puis estompe au goupillon pour un rendu naturel.</p></div>
+      <div><span class="tool">Gel fixateur</span><h3>Fixe</h3><p>Termine en brossant les poils vers le haut avec le gel : tes sourcils restent disciplinés toute la journée, même face à l'eau.</p></div>
+    </div>
+    <p class="routine-tip">Mon conseil de pro : commence toujours léger. On peut ajouter de la couleur, c'est plus difficile d'en enlever. 🤎</p>
+  </div>
+</section>
+
+<section class="band" id="unite">
+  <div class="wrap">
+    <h2>Les produits à l'unité</h2>
+    <p class="lead">Tu as déjà le kit ? Recharge seulement ce qu'il te faut, en retrait à Rodez ou en livraison.</p>
+    <div class="units">
+      <article class="unit"><img src="belaya-crayon.webp" alt="Crayon sourcils BELAYA" width="479" height="360"><div><h3>Crayon BELAYA</h3><p>Précision et définition. Effet naturel, longue tenue.</p><span class="pr">14,90 €</span><a class="btn sm" id="uCrayon" href="#" target="_blank" rel="noopener">Commander</a></div></article>
+      <article class="unit"><img src="belaya-pommade.webp" alt="Pommade 2 en 1 BELAYA" width="506" height="259"><div><h3>Pommade 2 en 1</h3><p>Remplit et fixe. Texture crémeuse, effet naturel.</p><span class="pr">13,90 €</span><a class="btn sm" id="uPommade" href="#" target="_blank" rel="noopener">Commander</a></div></article>
+      <article class="unit"><img src="belaya-cire.webp" alt="Cire sourcils BELAYA" width="506" height="346"><div><h3>Cire BELAYA</h3><p>Fixation forte et naturelle. Sourcils disciplinés toute la journée.</p><span class="pr">13,90 €</span><a class="btn sm" id="uCire" href="#" target="_blank" rel="noopener">Commander</a></div></article>
+    </div>
+    <p class="note" id="unitNote"></p>
+  </div>
+</section>
+
+<section class="band" style="background:var(--bg2)">
+  <div class="wrap maker">
+    <img src="belaya-gul.webp" alt="Gul, créatrice de BELAYA" width="1179" height="1570">
+    <div>
+      <h2>Créé par Gul</h2>
+      <p class="lead" style="margin:0">Spécialiste de la beauté du regard à Rodez depuis 2022, j'ai créé BELAYA pour que tu retrouves chez toi le résultat d'une prestation pro : des sourcils nets, naturels, qui tiennent toute la journée.</p>
+      <blockquote>More than a kit ♡</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap" style="max-width:760px">
+    <h2>Questions fréquentes</h2>
+    <details><summary>Comment se passe le retrait ?</summary><p>Après ta commande, je te contacte par téléphone ou WhatsApp sous 24 h pour convenir d'un moment. Le retrait se fait au cabinet, en centre-ville de Rodez, sur rendez-vous. L'adresse t'est envoyée à ce moment-là.</p></details>
+    <details><summary>Et si je me trompe de teinte ?</summary><p>Écris-moi avant le retrait : on peut changer la teinte tant que le kit n'est pas récupéré.</p></details>
+    <details><summary>Je ne suis pas à Rodez, c'est possible ?</summary><p>Oui ! Choisis « Livraison en point relais » (3,90 €). Sur la page de paiement, indique ton adresse et le point relais que tu préfères : je t'envoie ton colis avec un suivi, et tu le récupères près de chez toi.</p></details>
+    <details><summary>Le paiement est-il sécurisé ?</summary><p>Oui, le paiement par carte passe par Stripe, une plateforme de paiement sécurisée. Je ne vois jamais tes coordonnées bancaires.</p></details>
+  </div>
+</section>
+
+<a class="wa-float" href="https://wa.me/33646675242?text=Bonjour%20Gul%2C%20j%27ai%20une%20question%20sur%20BELAYA" target="_blank" rel="noopener" aria-label="Une question ? Écris-moi sur WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.6A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg><span>Une question ?</span></a>
+<footer class="band">BELAYA · Gul Beauty Concept · Spécialiste de la beauté du regard<br>WhatsApp <span>06 46 67 52 42</span> · <a href="https://gulbeautyconcept-formations.netlify.app" style="color:var(--gold2)">Nos formations</a><br><a href="cgv.html" style="color:var(--gold2)">CGV, mentions légales et droit de rétractation</a></footer>
+
+<script>
+{
+const WA = "33646675242";
+// Liens de paiement Stripe, un par produit. Tant qu'un lien est vide, la commande passe par WhatsApp.
+const PAY = { kit:"https://buy.stripe.com/dRm8wRfbM9I92yRduj0Ba00", crayon:"https://buy.stripe.com/fZu28tfbMf2tflDbmb0Ba01", pommade:"https://buy.stripe.com/bJeeVf1kWcUl0qJ89Z0Ba03", cire:"https://buy.stripe.com/00waEZ5BcaMd4GZeyn0Ba02" };
+// Liens Stripe avec livraison en point relais (+3,90 €). Tant qu'un lien est vide, la commande en livraison passe par WhatsApp.
+const PAY_LIV = { kit:"https://buy.stripe.com/28E28t9Rsg6xc9rduj0Ba07", crayon:"https://buy.stripe.com/5kQeVf9RsdYpehz3TJ0Ba09", pommade:"https://buy.stripe.com/aFa4gB3t4g6xddvgGv0Ba0a", cire:"https://buy.stripe.com/fZu3cxbZA5rT4GZeyn0Ba0b" };
+// Kit Black Friday + livraison (37,80 €), utilisé jusqu'au 30 novembre.
+const PAY_BF_LIV = { kit:"https://buy.stripe.com/5kQbJ37Jkg6xa1j89Z0Ba08" };
+const SHIP = "3,90 €";
+// Ajoute la teinte choisie au paiement (visible dans Stripe : « ID de référence client »).
+// Offre Black Friday : -15 % sur tout le site jusqu'au lundi 30 novembre 2026 à 23 h 59.
+// Pendant l'offre, les commandes passent par WhatsApp au prix réduit (Gul encaisse ensuite elle-même).
+const PROMO = { end: new Date("2026-11-30T23:59:59+01:00"), price: { kit:"33,90 €", crayon:"12,65 €", pommade:"11,80 €", cire:"11,80 €" } };
+const PAY_BF = { kit:"https://buy.stripe.com/fZu28te7I9I96P7bmb0Ba06", crayon:"", pommade:"", cire:"" };
+const promoOn = Date.now() < PROMO.end.getTime();
+const BF = "";
+const BFMSG = "";
+const payUrl = (link, sh) => link + (link.includes("?") ? "&" : "?") + "client_reference_id=" + encodeURIComponent(sh ? sh.full.replace("°", "").replace(/ /g, "_") : "sans_teinte");
+const SHADES = [
+  { id:"blond",   name:"Blondie", full:"N°1 Blondie", who:"cheveux blonds à châtain clair", short:"blondes", hex:"#9a7650", desc:"Pour les blondes et les châtain très clair. Naturel et lumineux." },
+  { id:"chatain", name:"Toffee", full:"N°2 Toffee", who:"cheveux châtains et roux", short:"châtains, rousses", hex:"#6e4b33", desc:"Pour les châtains et les rousses. Doux et chaleureux." },
+  { id:"brun",    name:"Mocha", full:"N°3 Mocha", who:"cheveux bruns, peau claire", short:"brunes", hex:"#47301f", desc:"Pour les brunes et les cheveux noirs sur peau claire. Intense mais naturel." },
+  { id:"noir",    name:"Brunette", full:"N°4 Brunette", who:"cheveux noirs, peau mate à foncée", short:"cheveux noirs", hex:"#241b18", desc:"Pour les cheveux noirs, sur peau mate à foncée. Regard affirmé." }
+];
+const HAIR = [
+  { id:"blond", t:"Blond", c:"#d9b47a" }, { id:"roux", t:"Roux", c:"#b0562e" },
+  { id:"chatclair", t:"Châtain clair", c:"#8a6040" }, { id:"chatfonce", t:"Châtain foncé", c:"#5a3c28" },
+  { id:"brun", t:"Brun", c:"#35241a" }, { id:"noir", t:"Noir", c:"#151010" }
+];
+const SKIN = [
+  { id:"claire", t:"Claire", c:"#f6d9c3" }, { id:"medium", t:"Médium", c:"#e2b48e" },
+  { id:"mate", t:"Mate", c:"#c08a5f" }, { id:"foncee", t:"Foncée", c:"#7d5135" }
+];
+const LOOK = [ { id:"naturel", t:"Naturel" }, { id:"intense", t:"Intense" } ];
+const st = { hair:"chatfonce", skin:"medium", look:"naturel", shade:null, mode:"retrait" };
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const order = ["blond","chatain","brun","noir"];
+const shadeOf = id => SHADES.find(s => s.id === id) || SHADES[0];
+
+function recommend() {
+  const dark = st.skin === "mate" || st.skin === "foncee";
+  let r = { blond:"blond", roux:"chatain", chatclair:"chatain", chatfonce:"brun", brun:"brun", noir: dark ? "noir" : "brun" }[st.hair];
+  const i = order.indexOf(r);
+  if (st.look === "intense" && i < 3 && st.hair !== "blond") r = order[i + 1];
+  if (st.look === "intense" && st.hair === "blond") r = "chatain";
+  return r;
+}
+function why(id) {
+  const h = { blond:"blonds", roux:"roux", chatclair:"châtain clair", chatfonce:"châtain foncé", brun:"bruns", noir:"noirs" }[st.hair];
+  const base = { blond:"une teinte douce qui suit ta couleur sans durcir le visage.",
+    chatain:"elle réchauffe le regard et reste très naturelle.",
+    brun:"elle structure le regard sans effet « trop dessiné ».",
+    noir:"elle s'accorde à tes cheveux et à ta carnation pour un regard affirmé." }[id];
+  return "Avec des cheveux " + h + ", " + base;
+}
+function browPath(x0, dir) {
+  let d = "";
+  for (let k = 0; k < 16; k++) {
+    const s = k / 15, x = x0 + dir * s * 38, y = 162 - 10 * Math.sin(Math.PI * Math.min(1, s * 1.3)) + s * 2;
+    const a = dir * (0.9 - s * 0.9), w = 7 - s * 3;
+    d += `M${x.toFixed(1)} ${(y + 4).toFixed(1)} q${(dir * 6 + a * 4).toFixed(1)} ${(-w).toFixed(1)} ${(dir * 12).toFixed(1)} ${(-w - 1).toFixed(1)} `;
+  }
+  return d;
+}
+
+function opts(el, list, cur, key, swatch) {
+  el.innerHTML = list.map(o => `<button type="button" class="opt" data-k="${key}" data-v="${o.id}" aria-pressed="${o.id === cur}">${swatch ? `<i style="background:${o.c}"></i>` : ""}${esc(o.t)}</button>`).join("");
+}
+function render() {
+  const rec = recommend();
+  if (!st.shade) st.shade = rec;
+  opts($("hairOpts"), HAIR, st.hair, "hair", true);
+  opts($("skinOpts"), SKIN, st.skin, "skin", true);
+  opts($("lookOpts"), LOOK, st.look, "look", false);
+  const sh = shadeOf(st.shade), hair = HAIR.find(x => x.id === st.hair), skin = SKIN.find(x => x.id === st.skin);
+  document.querySelectorAll(".arch .pv").forEach(im => im.classList.toggle("on", im.dataset.shade === sh.id));
+  $("resDot").style.background = sh.hex;
+  $("resTag").textContent = sh.full;
+  $("resStroke").setAttribute("stroke", sh.hex);
+  $("resDots").innerHTML = SHADES.map(s => `<button type="button" class="rd" data-shade="${s.id}" aria-pressed="${s.id === st.shade}" aria-label="Voir la teinte ${esc(s.full)}"><i style="background:${s.hex}"></i>${esc(s.name)}</button>`).join("");
+  $("resName").textContent = shadeOf(rec).full;
+  $("resWhy").textContent = why(rec) + (st.shade !== rec ? " (Tu regardes actuellement la teinte " + sh.name + ".)" : "");
+  $("shades").innerHTML = SHADES.map(s => `<button type="button" class="sw" data-shade="${s.id}" aria-pressed="${s.id === st.shade}"><div class="chip" style="background:${s.hex}"></div><h3>${esc(s.full)}<span class="who">(${esc(s.who)})</span>${s.id === rec ? '<span style="display:block;margin-top:6px;font-size:14px;font-weight:500;font-family:Poppins;color:var(--gold2)">✓ Conseillée pour toi</span>' : ""}</h3><p>${esc(s.desc)}</p></button>`).join("");
+  const chips = SHADES.map(s => `<button type="button" class="opt" data-k="shade" data-v="${s.id}" aria-pressed="${s.id === st.shade}"><i style="background:${s.hex}"></i>${esc(s.name)} <small class="who2">(${esc(s.short)})</small></button>`).join("");
+  $("labShades").innerHTML = chips; $("orderShades").innerHTML = chips;
+  const liv = st.mode === "livraison";
+  const how = liv ? "en livraison en point relais (+" + SHIP + ")" : "en click & collect à Rodez";
+  $("orderMode").innerHTML = [["retrait","📍 Retrait à Rodez · gratuit"],["livraison","📦 Livraison point relais · " + SHIP]].map(m => `<button type="button" class="opt" data-k="mode" data-v="${m[0]}" aria-pressed="${m[0] === st.mode}">${m[1]}</button>`).join("");
+  $("ccInfo").innerHTML = liv
+    ? '<div>📦<span><b>Livraison en point relais partout en France</b> : ' + SHIP + ', avec suivi.</span></div><div>🏠<span>Sur la page de paiement, indique <b>ton adresse et ton point relais préféré</b>.</span></div><div>📲<span>Je te préviens dès que ton colis est parti.</span></div>'
+    : '<div>📍<span><b>Retrait au cabinet à Rodez</b> (centre-ville), sur rendez-vous.</span></div><div>📲<span>Après ta commande, <b>je te contacte sous 24 h</b> pour fixer le moment du retrait.</span></div><div>🎁<span>Pas de frais de livraison.</span></div>';
+  const bfLink = promoOn && !liv && PAY_BF.kit;
+  // Clientes de Rodez (retrait) : commande par WhatsApp. Livraison : paiement par carte dès que les liens existent.
+  const link = liv ? PAY_LIV.kit : "";
+  if (promoOn && liv && PAY_BF_LIV.kit) {
+    $("pay").href = payUrl(PAY_BF_LIV.kit, sh);
+    $("pay").textContent = "Payer " + PROMO.price.kit + " + " + SHIP + " de livraison · " + sh.name;
+    $("payNote").textContent = "🖤 Prix Black Friday · 🔒 Paiement sécurisé par Stripe. Ta teinte " + sh.full + " est enregistrée avec ta commande.";
+  } else if (promoOn) {
+    const msg = "Bonjour Gul, je souhaite commander le kit sourcils BELAYA en offre Black Friday (" + PROMO.price.kit + " au lieu de 39,90 €) en teinte " + sh.full + ", " + how + ".";
+    $("pay").href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+    $("pay").textContent = "Commander à " + PROMO.price.kit + " · " + sh.name + (liv ? " + livraison" : "");
+    $("payNote").textContent = "🖤 Offre Black Friday : ta commande m'arrive sur WhatsApp, je te confirme" + (liv ? " et on règle ensemble." : " et tu règles au moment du retrait.");
+  } else if (link) {
+    $("pay").href = payUrl(link, sh);
+    $("pay").textContent = (liv ? "Payer 39,90 € + " + SHIP + " de livraison · " + sh.name : "Payer 39,90 € par carte · " + sh.name) + BF;
+    $("payNote").textContent = "🔒 Paiement sécurisé par Stripe. Ta teinte " + sh.full + " est enregistrée avec ta commande" + (liv ? "." : ", et je te contacte sous 24 h pour le retrait.");
+  } else {
+    const msg = "Bonjour Gul, je souhaite commander le kit sourcils BELAYA (39,90 €) en teinte " + sh.full + ", " + how + BFMSG + ".";
+    $("pay").href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+    $("pay").textContent = "Commander la teinte " + sh.name + " · 39,90 €" + (liv ? " + livraison" : "");
+    $("payNote").textContent = "Ta commande m'arrive sur WhatsApp, je te réponds pour confirmer" + (liv ? " et organiser l'envoi." : " et organiser le retrait. Tu règles au moment du retrait.");
+  }
+  const shade = " en teinte " + sh.full;
+  const unit = (id, key, label, price, withShade) => {
+    const l = liv ? PAY_LIV[key] : "";
+    if (false) { $(id).href = "https://wa.me/" + WA + "?text=" + encodeURIComponent("Bonjour Gul, je souhaite commander " + label + " en offre Black Friday (" + PROMO.price[key] + " au lieu de " + price + ")" + (withShade ? shade : "") + ", " + how + "."); $(id).textContent = "Commander à " + PROMO.price[key]; }
+    else if (l) { $(id).href = payUrl(l, withShade ? sh : null); $(id).textContent = "Payer " + price + (liv ? " + livraison" : " par carte") + BF; }
+    else { $(id).href = "https://wa.me/" + WA + "?text=" + encodeURIComponent("Bonjour Gul, je souhaite commander " + label + " (" + price + ")" + (withShade ? shade : "") + ", " + how + BFMSG + "."); $(id).textContent = "Commander"; }
+  };
+  unit("uCrayon", "crayon", "le crayon BELAYA", "14,90 €", true);
+  unit("uPommade", "pommade", "la pommade 2 en 1 BELAYA", "13,90 €", true);
+  unit("uCire", "cire", "la cire BELAYA", "13,90 €", false);
+  $("unitNote").textContent = "Crayon et pommade en teinte " + sh.full + " (la teinte choisie plus haut). " + (liv ? "Livraison en point relais : + " + SHIP + "." : "Retrait gratuit à Rodez.") + " Tu peux changer la teinte et le mode de réception dans la partie commande.";
+  draw();
+}
+document.addEventListener("click", e => {
+  const o = e.target.closest(".opt[data-k]");
+  if (o) {
+    const k = o.dataset.k; st[k] = o.dataset.v;
+    if (k !== "shade" && k !== "mode") st.shade = recommend();
+    render(); return;
+  }
+  const s = e.target.closest(".sw, .rd");
+  if (s) { st.shade = s.dataset.shade; render(); }
+});
+
+const cv = $("cv"), ctx = cv.getContext("2d");
+let photo = null, mask = null, mctx = null, tint = null, tctx = null, hist = [], erase = false, showBefore = false, drawing = false, last = null;
+function size() { return +$("size").value * (cv.width / Math.max(1, cv.clientWidth || cv.width)); }
+function labels() { $("sizeV").textContent = $("size").value; $("intV").textContent = $("int").value + " %"; }
+labels();
+$("file").addEventListener("change", e => {
+  const f = e.target.files && e.target.files[0]; if (!f) return;
+  const url = URL.createObjectURL(f), img = new Image();
+  img.onload = () => {
+    const sc = Math.min(1, 1100 / Math.max(img.width, img.height));
+    cv.width = Math.round(img.width * sc); cv.height = Math.round(img.height * sc);
+    photo = document.createElement("canvas"); photo.width = cv.width; photo.height = cv.height;
+    photo.getContext("2d").drawImage(img, 0, 0, cv.width, cv.height);
+    mask = document.createElement("canvas"); mask.width = cv.width; mask.height = cv.height; mctx = mask.getContext("2d");
+    tint = document.createElement("canvas"); tint.width = cv.width; tint.height = cv.height; tctx = tint.getContext("2d");
+    hist = []; cv.hidden = false; $("drop").hidden = true; URL.revokeObjectURL(url); draw();
+  };
+  img.src = url; e.target.value = "";
+});
+function draw() {
+  if (!photo) return;
+  ctx.globalCompositeOperation = "source-over"; ctx.globalAlpha = 1;
+  ctx.clearRect(0, 0, cv.width, cv.height); ctx.drawImage(photo, 0, 0);
+  if (showBefore) return;
+  tctx.globalCompositeOperation = "source-over"; tctx.clearRect(0, 0, cv.width, cv.height);
+  tctx.fillStyle = shadeOf(st.shade).hex; tctx.fillRect(0, 0, cv.width, cv.height);
+  tctx.globalCompositeOperation = "destination-in"; tctx.drawImage(mask, 0, 0);
+  const a = +$("int").value / 100;
+  ctx.globalAlpha = a; ctx.globalCompositeOperation = "multiply"; ctx.drawImage(tint, 0, 0);
+  ctx.globalAlpha = a * 0.45; ctx.globalCompositeOperation = "source-over"; ctx.drawImage(tint, 0, 0);
+  ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
+}
+function pos(e) { const r = cv.getBoundingClientRect(); return { x:(e.clientX - r.left) * cv.width / r.width, y:(e.clientY - r.top) * cv.height / r.height }; }
+function dab(p) {
+  const r = size() / 2, g = mctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
+  g.addColorStop(0, "rgba(0,0,0,.55)"); g.addColorStop(.6, "rgba(0,0,0,.35)"); g.addColorStop(1, "rgba(0,0,0,0)");
+  mctx.globalCompositeOperation = erase ? "destination-out" : "source-over";
+  mctx.fillStyle = g; mctx.beginPath(); mctx.arc(p.x, p.y, r, 0, Math.PI * 2); mctx.fill();
+}
+function stroke(p) {
+  if (!last) { dab(p); last = p; return; }
+  const dx = p.x - last.x, dy = p.y - last.y, n = Math.max(1, Math.ceil(Math.hypot(dx, dy) / (size() / 5)));
+  for (let i = 1; i <= n; i++) dab({ x:last.x + dx * i / n, y:last.y + dy * i / n });
+  last = p;
+}
+cv.addEventListener("pointerdown", e => {
+  if (!photo) return; e.preventDefault(); cv.setPointerCapture(e.pointerId);
+  hist.push(mctx.getImageData(0, 0, mask.width, mask.height)); if (hist.length > 15) hist.shift();
+  drawing = true; last = null; stroke(pos(e)); draw();
+});
+cv.addEventListener("pointermove", e => { if (!drawing) return; stroke(pos(e)); draw(); });
+const stop = () => { drawing = false; last = null; };
+cv.addEventListener("pointerup", stop); cv.addEventListener("pointercancel", stop);
+$("undo").addEventListener("click", () => { if (mctx && hist.length) { mctx.putImageData(hist.pop(), 0, 0); draw(); } });
+$("clear").addEventListener("click", () => { if (mctx) { hist.push(mctx.getImageData(0, 0, mask.width, mask.height)); mctx.clearRect(0, 0, mask.width, mask.height); draw(); } });
+const setMode = v => { erase = v; $("modeBrush").setAttribute("aria-pressed", String(!v)); $("modeErase").setAttribute("aria-pressed", String(v)); };
+$("modeBrush").addEventListener("click", () => setMode(false));
+$("modeErase").addEventListener("click", () => setMode(true));
+const bf = $("before");
+const on = () => { showBefore = true; draw(); }, off = () => { showBefore = false; draw(); };
+bf.addEventListener("pointerdown", on); bf.addEventListener("pointerup", off); bf.addEventListener("pointerleave", off);
+bf.addEventListener("keydown", e => { if (e.key === " " || e.key === "Enter") on(); });
+bf.addEventListener("keyup", off);
+$("size").addEventListener("input", labels);
+$("int").addEventListener("input", () => { labels(); draw(); });
+
+if (promoOn) { document.body.classList.add("bf"); $("bfBar").hidden = false; document.querySelectorAll(".bfTag").forEach(e => e.hidden = false); }
+render();
+}
+</script>
+</body>
+</html>
